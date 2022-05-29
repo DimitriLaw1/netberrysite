@@ -1,6 +1,6 @@
 <p><label for="school">Select the HBCU you attend(ed):</label>
            
-            <select class="container" id="school" name="school" style="width:100%; height:30px;">
+            <select class="container" id="school_name" name="school_name" style="width:100%; height:30px;">
                 <option value="empty"> </option>
               <option value="Alabama A&M University">Alabama A&M University</option>
               <option value="Alabama State University">Alabama State University</option>
@@ -113,4 +113,3 @@
               <option value="hamptonU">Hampton University</option>
               <option value="ssu">Savannah State University</option>
             </select></p>
-<hr>

@@ -29,11 +29,11 @@ if(isset($_POST['post'])){
 
 			 ?> </p>
 
-<p> <span style="font-weight:bold;"> School: </span> <?php 
+<p> <span style="font-weight:bold; margin-bottom:20px;"> School: </span> <?php 
 			echo $user['school_name'];
 
 			 ?> </p>
-			 <input type="submit" name="updateprofile" id="update_button" value="Update Profile">
+			 <a href="settings.php" class="button1">Update Profile</a>
 		</div>
 
 	</div>
@@ -52,7 +52,34 @@ if(isset($_POST['post'])){
 
 
 	</div>
+	<div class="main_column column">
+		<form class="post_form" action="index.php" method="POST">
+			<h3> Want to promote your new music on The NetBerry's Social Media?</h3>
+			
+			<a href="#" class="button1">Purchase Promotion</a>
+			<hr>
 
+		</form>
+
+		
+
+
+	</div>
+<!-- Your Personal News Feed -->
+	<div class="main_column column">
+		<form class="post_form" action="index.php" method="POST">
+			<h3> Your Personal News Feed</h3>
+			<p style="font: weight 100px; color:grey">Any News You Submit Will Be Posted Here</p>
+			
+			
+			<hr>
+
+		</form>
+
+		
+
+
+	</div>
 
 
 

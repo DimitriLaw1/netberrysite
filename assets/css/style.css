@@ -74,6 +74,7 @@ nav a:hover {
 	border-radius: 5px;
 	box-shadow: 2px 2px 1px #D3D3D3;
 	z-index: -1;
+	margin-bottom: 20px;
 }
 
 .user_details {
@@ -120,6 +121,19 @@ nav a:hover {
 	padding: 5px;
 	margin-bottom: 20px;
 }
+
+.button1 {
+	font: bold 14px Arial;
+	text-decoration: none;
+	background-color: #EEEEEE;
+	color: #333333;
+	padding: 2px 6px 2px 6px;
+	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #333333;
+	border-bottom: 1px solid #333333;
+	border-left: 1px solid #CCCCCC;
+
+  }
 
 textarea:focus {
 	outline: 0;
