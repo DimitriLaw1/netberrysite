@@ -83,5 +83,11 @@ if(isset($_POST['update_school'])) {
     $message = "Details updated!<br><br>";
 }
 
+if(isset($_POST['update_bio'])) {
+    $school_name = $_POST['artist_bio'];
+    $school_query = mysqli_query($con, "UPDATE users SET artist_bio='$artist_bio' WHERE username='$userLoggedIn'");
+    $message = "Details updated!<br><br>";
+}
+
 
 ?>

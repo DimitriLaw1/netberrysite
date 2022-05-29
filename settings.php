@@ -70,6 +70,22 @@ include("form.php");
         
 	</form>
 
+    <h4>Update Artist Biography</h4>
+	<form action="settings.php" method="POST">
+    <textarea name="artist_bio" id="artist_bio" placeholder="was born and raised in Winston-Salem in North Carolina and always had a hand in the music world. She has been singing and playing instruments for as long as she remembers; it seems it was in her destiny to become a rapper. Her most cherished early musical memory is that of her third grade talent show..." style="width: 100%;
+    height: 60px;
+    border-radius: 3px;
+    margin-right: 5px;
+    border: 1px solid #D3D3D3;
+    font-size: 12px;
+    padding: 5px;
+    margin-bottom: 20px;
+    font-size: 14px;"></textarea>
+   <br> <?php echo $message; ?>
+
+		<input type="submit" name="update_bio" id="save_details" value="Update Biography"><br>
+        
+	</form>
 
 	<h4>Close Account</h4>
 	<form action="settings.php" method="POST">
