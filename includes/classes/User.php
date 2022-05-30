@@ -27,6 +27,26 @@ class User {
 		return $row['first_name'] . " " . $row['last_name'];
 	}
 
+	public function getSchoolName() {
+		$username = $this->user['username'];
+		$query_school = mysqli_query($this->con, "SELECT school_name FROM users WHERE username='$username'");
+		$row = mysqli_fetch_array($query_school);
+		return $row['school_name'];
+	}
+
+	public function isClosed() {
+		$username = $this->user['username'];
+		$query = mysqli_query($this->con, "SELECT user_closed FROM users WHERE username='$username'");
+		$row = mysqli_fetch_array($query);
+
+		if($row['user_closed'] == 'yes')
+			return true;
+		else 
+			return false;
+	}
+
+	
+
 
 
 

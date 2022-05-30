@@ -8,6 +8,7 @@ $password = ""; //password
 $school_name = ""; // school name
 $date = ""; //Sign up date 
 $error_array = array(); //Holds error messages
+$artist_bio = " Add a Bio to your profile with the update profile button below!"; // holds artist bio
 
 if(isset($_POST['register_button'])){
 
@@ -117,7 +118,7 @@ if(isset($_POST['register_button'])){
 			$profile_pic = "assets/images/profile_pics/defaults/head_emerald.png";
 
 
-		$query = mysqli_query($con, "INSERT INTO users VALUES (null, '$fname', '$lname', '$username', '$em', '$password','$instagram','$school_name', '$date', '$profile_pic', '0', '0', 'no', ',')");
+		$query = mysqli_query($con, "INSERT INTO users VALUES (null, '$fname', '$lname', '$username', '$em', '$password','$instagram','$school_name', '$date', '$profile_pic','$artist_bio', '0', '0', 'no', ',')");
 
 		array_push($error_array, "<span style='color: #14C800;'>You're all set! Registration successful! </span><br>");
 
