@@ -21,13 +21,17 @@ class Post {
 			//Get username
 			$added_by = $this->user_obj->getUsername();
 
+			//Get School name
+
+			$name_school = $this->user_obj->getSchoolName();
+
 			//If user is on own profile, user_to is 'none'
 			if($user_to == $added_by) {
 				$user_to = "none";
 			}
 
 			//insert post 
-			$query = mysqli_query($this->con, "INSERT INTO posts VALUES(null, '$body', '$added_by', '$user_to', '$date_added', 'no', 'no', '0')");
+			$query = mysqli_query($this->con, "INSERT INTO posts VALUES(null, '$body', '$added_by', '$name_school', '$user_to', '$date_added', 'no', 'no', '0')");
 			$returned_id = mysqli_insert_id($this->con);
 
 			//Insert notification 
@@ -65,6 +69,7 @@ class Post {
 				$body = $row['body'];
 				$added_by = $row['added_by'];
 				$date_time = $row['date_added'];
+				$name_school = $row['name_school'];
 
 				//Prepare user_to string so it can be included even if not posted to a user
 				if($row['user_to'] == "none") {
@@ -96,11 +101,12 @@ class Post {
 						$count++;
 					}
 
-					$user_details_query = mysqli_query($this->con, "SELECT first_name, last_name, profile_pic FROM users WHERE username='$added_by'");
+					$user_details_query = mysqli_query($this->con, "SELECT first_name, last_name, profile_pic, school_name FROM users WHERE username='$added_by'");
 					$user_row = mysqli_fetch_array($user_details_query);
 					$first_name = $user_row['first_name'];
 					$last_name = $user_row['last_name'];
 					$profile_pic = $user_row['profile_pic'];
+					
 
 
 					//Timeframe
@@ -173,7 +179,7 @@ class Post {
 								</div>
 
 								<div class='posted_by' style='color:#ACACAC;'>
-									<a href='$added_by'> $first_name $last_name </a> $user_to &nbsp;&nbsp;&nbsp;&nbsp;$time_message
+									<a href='$added_by'> $first_name $last_name </a> <span> from $name_school </span> $user_to &nbsp;&nbsp;&nbsp;&nbsp;$time_message
 								</div>
 								<div id='post_body'>
 									$body
