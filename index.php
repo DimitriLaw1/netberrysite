@@ -58,11 +58,12 @@ if(isset($_POST['post'])){
 	</div>
 	<div class="main_column column">
 		<form class="post_form" action="index.php" method="POST">
-			<h3> Want to promote your new music on The NetBerry's Social Media?</h3>
+			<h3 style="margin-bottom: 30px;"> Want to promote your new music on The NetBerry's Social Media?</h3>
 			
-			<a href="#" class="button1">Purchase Promotion</a>
+			<a href="purchase.php" style="background-color: green; color:white;" class="button1">Purchase Promotion</a>
 			<hr>
-
+			<a href="purchase.php" style="background-color: #3498db; color:white;" class="button1">View Purchase History</a>
+			<hr>
 		</form>
 
 		

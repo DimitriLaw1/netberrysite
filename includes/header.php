@@ -33,7 +33,7 @@ else {
 	<link rel="stylesheet" href="assets/css/jquery.Jcrop.css" type="text/css" />
 
 </head>
-<body>
+<body onLoad="preLoad()">
 
 	<div class="top_bar"> 
 
