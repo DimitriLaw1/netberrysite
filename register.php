@@ -112,18 +112,9 @@ require 'includes/form_handlers/login_handler.php';
 
 
 					
-					
-					<p><label for="school">Select the HBCU you attend(ed):</label>
-           
-            <select class="container" id="school" name="school" style="width:100%; height:30px;">
-                <option value=""> </option>
-              <option value="Alabama A&M University">Alabama A&M University</option>
-              <option value="Alabama State University">Alabama State University</option>
-              <option value="Albany State University">Albany State University</option>
-              <option value="Alcorn State University">Alcorn State University</option>
-              <option value="Allen University">Allen University</option>
-
-			  </select></p>
+					<?php
+					include("form.php");
+					?>
 			  <br>
 			 
 <hr>

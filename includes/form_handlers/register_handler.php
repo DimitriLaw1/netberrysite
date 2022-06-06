@@ -44,7 +44,7 @@ if(isset($_POST['register_button'])){
 
 	
 	//school 
-	$school_name = $_POST['school']; //Remove html tags
+	$school_name = $_POST['school_name']; //Remove html tags
 	
 
 	$date = date("Y-m-d"); //Current date

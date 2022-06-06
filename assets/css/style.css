@@ -175,3 +175,22 @@ textarea:focus {
 .post_profile_pic img {
 	border-radius: 5px;
 }
+.paypalbutton{
+	width: 150px;
+	height: 40px;
+	
+}
+
+.cashappbutton{
+	font: bold 16px Arial;
+	text-decoration: none;
+	background-color: #00D632;
+	color: #fff;
+	
+	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #333333;
+	border-bottom: 1px solid #333333;
+	border-left: 1px solid #CCCCCC;
+	padding: 12px;
+}
+
