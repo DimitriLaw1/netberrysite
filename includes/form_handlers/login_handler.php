@@ -33,7 +33,7 @@ if(isset($_POST['login_button'])) {
 		
 
 		$_SESSION['username'] = $username;
-		header("Location: admin_control.php");
+		header("Location: admin_berry_control.php");
 		exit();
 	}
 	if($check_login_query == 1 && $email != $adminLogin) {

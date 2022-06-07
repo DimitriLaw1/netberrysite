@@ -38,7 +38,7 @@ else {
 	<div class="top_bar"> 
 
 		<div class="logo">
-			<a href="admin_control.php">The NetBerry</a>
+			<a href="admin_berry_control.php">The NetBerry</a>
 		</div>
 
 		<nav>

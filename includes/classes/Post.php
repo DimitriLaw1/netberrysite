@@ -459,7 +459,7 @@ public function loadPaymentAdmin() {
 
 
 						$strss .= "
-						<form  action='admin_control.php' method='POST'>
+						<form  action='admin_berry_control.php' method='POST'>
 						<h3>$person_name</h3>
 						<h4> $school_from</h4>
 						<p>$promotion_type</p> 
