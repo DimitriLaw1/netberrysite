@@ -69,7 +69,7 @@ require 'includes/form_handlers/login_handler.php';
 
 			<div id="second">
 
-				<form  action="register.php" method="POST">
+				<form  action="register.php" method="POST" >
 					<input type="text" name="reg_fname" placeholder="First Name" value="<?php 
 					if(isset($_SESSION['reg_fname'])) {
 						echo $_SESSION['reg_fname'];

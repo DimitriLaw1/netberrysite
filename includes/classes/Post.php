@@ -1,4 +1,5 @@
 <?php
+
 class Post {
 	private $user_obj;
 	private $con;
@@ -338,7 +339,6 @@ class Post {
 								<div class='post_profile_pic'>
 									<img src='$profile_pic' width='50'>
 								</div>
-
 								<div class='posted_by' style='color:#ACACAC;'>
 									<a href='$added_by'> $first_name $last_name </a> <span> from $name_school </span> $user_to &nbsp;&nbsp;&nbsp;&nbsp;$time_message
 								</div>
@@ -346,7 +346,6 @@ class Post {
 									$body
 									<br>
 								</div>
-
 							</div>
 							<hr>";
 				
@@ -364,6 +363,8 @@ class Post {
 
 
 	}
+
+
 // load payment
 
 public function loadPayment() {
